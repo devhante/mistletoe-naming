@@ -1,0 +1,17 @@
+.Input > .input-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.Input > .input-wrap > .input-top, .Input > .input-wrap > .input-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.Input .button, .Input .paste {
+  border: 1px solid black;
+  border-radius: 32px;
+  padding: 8px 16px;
+  margin-left: 4px;
+  cursor: pointer;
+}
