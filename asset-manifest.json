@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mistletoe-naming/static/css/main.f44db7bb.css",
+    "main.js": "/mistletoe-naming/static/js/main.03506b86.js",
+    "static/js/453.40a7c9f4.chunk.js": "/mistletoe-naming/static/js/453.40a7c9f4.chunk.js",
+    "index.html": "/mistletoe-naming/index.html",
+    "main.f44db7bb.css.map": "/mistletoe-naming/static/css/main.f44db7bb.css.map",
+    "main.03506b86.js.map": "/mistletoe-naming/static/js/main.03506b86.js.map",
+    "453.40a7c9f4.chunk.js.map": "/mistletoe-naming/static/js/453.40a7c9f4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f44db7bb.css",
+    "static/js/main.03506b86.js"
+  ]
+}
