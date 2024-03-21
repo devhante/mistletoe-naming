@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mistletoe-naming/static/css/main.f44db7bb.css",
-    "main.js": "/mistletoe-naming/static/js/main.03506b86.js",
+    "main.css": "/mistletoe-naming/static/css/main.5ce35eea.css",
+    "main.js": "/mistletoe-naming/static/js/main.d52c4d54.js",
     "static/js/453.40a7c9f4.chunk.js": "/mistletoe-naming/static/js/453.40a7c9f4.chunk.js",
     "index.html": "/mistletoe-naming/index.html",
-    "main.f44db7bb.css.map": "/mistletoe-naming/static/css/main.f44db7bb.css.map",
-    "main.03506b86.js.map": "/mistletoe-naming/static/js/main.03506b86.js.map",
+    "main.5ce35eea.css.map": "/mistletoe-naming/static/css/main.5ce35eea.css.map",
+    "main.d52c4d54.js.map": "/mistletoe-naming/static/js/main.d52c4d54.js.map",
     "453.40a7c9f4.chunk.js.map": "/mistletoe-naming/static/js/453.40a7c9f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f44db7bb.css",
-    "static/js/main.03506b86.js"
+    "static/css/main.5ce35eea.css",
+    "static/js/main.d52c4d54.js"
   ]
 }
