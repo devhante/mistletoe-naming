@@ -10,8 +10,19 @@ export type selectState = {
     | "ui"
     | "background"
     | "animclip"
-    | "fx";
+    | "fx"
+    | "bgm"
+    | "efx"
+    | "prefab"
+    | "material"
+    | "scene"
+    | "scriptable"
+    | "font"
+    | "prefab-efx"
+    | "shader"
+    | "fbx";
   uikind: "panel" | "button" | "icon";
+  soundkind: "once" | "loop";
 };
 
 export type selectSetKindAction = {
@@ -29,7 +40,17 @@ export type selectSetKindPayload = {
     | "ui"
     | "background"
     | "animclip"
-    | "fx";
+    | "fx"
+    | "bgm"
+    | "efx"
+    | "prefab"
+    | "material"
+    | "scene"
+    | "scriptable"
+    | "font"
+    | "prefab-efx"
+    | "shader"
+    | "fbx";
 };
 
 export type selectSetUIKindAction = {
@@ -42,9 +63,20 @@ export type selectSetUIKindPayload = {
   value: "panel" | "button" | "icon";
 };
 
+export type selectSetSoundKindAction = {
+  payload: selectSetSoundKindPayload;
+  type: string;
+};
+
+export type selectSetSoundKindPayload = {
+  name: selectName;
+  value: "once" | "loop";
+};
+
 export const initialState: selectState = {
   kind: "texture",
   uikind: "panel",
+  soundkind: "once",
 };
 
 export const selectSlice = createSlice({
@@ -57,8 +89,11 @@ export const selectSlice = createSlice({
     setUIKind: (state: selectState, action: selectSetUIKindAction) => {
       state["uikind"] = action.payload.value;
     },
+    setSoundKind: (state: selectState, action: selectSetSoundKindAction) => {
+      state["soundkind"] = action.payload.value;
+    },
   },
 });
 
-export const { setKind, setUIKind } = selectSlice.actions;
+export const { setKind, setUIKind, setSoundKind } = selectSlice.actions;
 export default selectSlice.reducer;

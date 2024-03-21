@@ -43,6 +43,36 @@ export default function Input() {
       front = "ani_clip";
     } else if (selectState.kind === "fx") {
       front = "ani_fx";
+    } else if (selectState.kind === "bgm") {
+      front = "snd_bgm";
+      if (selectState.soundkind === "once") {
+        back = "once";
+      } else if (selectState.soundkind === "loop") {
+        back = "loop";
+      }
+    } else if (selectState.kind === "efx") {
+      front = "snd_efx";
+      if (selectState.soundkind === "once") {
+        back = "once";
+      } else if (selectState.soundkind === "loop") {
+        back = "loop";
+      }
+    } else if (selectState.kind === "prefab") {
+      front = "prfb";
+    } else if (selectState.kind === "material") {
+      front = "mtr";
+    } else if (selectState.kind === "scene") {
+      front = "sn";
+    } else if (selectState.kind === "scriptable") {
+      front = "data";
+    } else if (selectState.kind === "font") {
+      front = "ft";
+    } else if (selectState.kind === "prefab-efx") {
+      front = "prfb_efx";
+    } else if (selectState.kind === "shader") {
+      front = "shdr";
+    } else if (selectState.kind === "fbx") {
+      front = "fbx";
     }
 
     if (front !== "") {
@@ -62,6 +92,7 @@ export default function Input() {
     <div className="Input">
       <div className="input-wrap">
         <div className="input-top">
+          <div className="label">입력</div>
           <input
             className="filename"
             onChange={handleChangeInput}
@@ -72,6 +103,7 @@ export default function Input() {
           </div>
         </div>
         <div className="input-bottom">
+          <div className="label">결과</div>
           <input className="result" value={inputState.result} />
           <CopyToClipboard text={inputState.result}>
             <div className="paste">복사</div>

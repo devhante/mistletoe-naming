@@ -1,0 +1,21 @@
+.Header {
+  height: 48px;
+  margin-bottom: 40px;
+}
+
+.Header > .header-wrap {
+  display: flex;
+  background-color: #D9D9D9;
+  align-items: center;
+}
+
+.Header > .header-wrap > .umbrella-icon {
+  width: 24px;
+  height: 24px;
+  padding: 12px;
+}
+
+.Header > .header-wrap > .title {
+  font-size: 20px;
+  color: #580082;
+}
